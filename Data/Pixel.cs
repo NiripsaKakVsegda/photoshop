@@ -11,6 +11,14 @@ namespace MyPhotoshop
             this.G = g;
             this.B = b;
         }
+        
+        public Pixel(double oneColour)
+        {
+            r = g = b = 0;
+            R = oneColour;
+            G = oneColour;
+            B = oneColour;
+        }
 
         public static Pixel operator *(Pixel pixel, double value)
         {
